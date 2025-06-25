@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Premium Technology Products</title>
+    <meta name="description" content="Discover the latest technology products with unbeatable prices and premium quality. Your one-stop destination for smartphones, laptops, audio, and more." />
+    <meta name="author" content="TechStore" />
+    <meta name="keywords" content="technology, electronics, smartphones, laptops, audio, gadgets, online shopping" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://techstore.example.com/" />
+    <meta property="og:title" content="TechStore - Premium Technology Products" />
+    <meta property="og:description" content="Discover the latest technology products with unbeatable prices and premium quality." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=630&fit=crop" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://techstore.example.com/" />
+    <meta property="twitter:title" content="TechStore - Premium Technology Products" />
+    <meta property="twitter:description" content="Discover the latest technology products with unbeatable prices and premium quality." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=630&fit=crop" />
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Performance monitoring -->
+    <script>
+      // Simple performance monitoring
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const navigation = performance.getEntriesByType('navigation')[0];
+          console.log('Page Load Time:', navigation.loadEventEnd - navigation.loadEventStart, 'ms');
+          console.log('DOM Content Loaded:', navigation.domContentLoadedEventEnd - navigation.domContentLoadedEventStart, 'ms');
+        }, 0);
+      });
+    </script>
+  </body>
+</html>
+  
